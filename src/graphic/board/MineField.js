@@ -55,8 +55,8 @@ export default function MineField() {
 
 const MineFieldStyle = styled.div`
     display: grid;
-    grid-template-columns: repeat(${props => props.theme.height}, 24px);
-    grid-template-rows: repeat(${props => props.theme.width}, 24px);
+    grid-template-columns: repeat(${props => props.theme.width}, 24px);
+    grid-template-rows: repeat(${props => props.theme.height}, 24px);
     margin: 16px;
     border-width: 4px;
     border-style: solid;

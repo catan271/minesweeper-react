@@ -17,8 +17,8 @@ const levelData = [
         mine: 40
     },
     {
-        height: 30,
-        width: 16,
+        height: 16,
+        width: 30,
         mine: 76
     }
 ]

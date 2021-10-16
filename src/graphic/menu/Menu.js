@@ -38,9 +38,9 @@ export default function Menu() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        const height = e.target.height.value
-        const width = e.target.width.value
-        const mine = e.target.mine.value
+        const height = Number.parseInt(e.target.height.value)
+        const width = Number.parseInt(e.target.width.value)
+        const mine = Number.parseInt(e.target.mine.value)
         if (!height || !width || !mine) return
         if (mine >= height * width) return window.alert('Too many mines') 
         setGameDispatch({

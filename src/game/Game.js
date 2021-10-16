@@ -40,7 +40,7 @@ export default class Game {
                     cell.classList.add('mis-flagged')
                 }
             }
-            else cell.classList.add('mine')
+            else if (cell.classList[3] !== 'flagged') cell.classList.add('mine')
             
         }
     }

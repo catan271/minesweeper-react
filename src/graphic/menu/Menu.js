@@ -88,6 +88,7 @@ const MenuStyle = styled.div`
     border-style: solid;
     border-color: #fff #808080 #808080 #fff;
     margin-bottom: 8px;
+    cursor: context-menu;
 
     .inner {
         margin: 8px;

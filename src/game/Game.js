@@ -7,8 +7,8 @@ export default class Game {
         this.map = new Array(height * width).fill(0)
         this.remaining = this.map.length - mine
         for (let i = 0; i < mine; i++) {
-            let x = Math.floor(Math.random() * (this.map.length - 0.01))
-            while (this.map[x] === '.') x = Math.floor(Math.random() * (this.map.length - 0.01))
+            let x = Math.floor(Math.random() * this.map.length)
+            while (this.map[x] === '.') x = Math.floor(Math.random() * this.map.length)
             this.map[x] = '.'
         }
         for (let i = 0; i < this.map.length; i++) {
